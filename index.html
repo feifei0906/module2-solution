@@ -10,25 +10,59 @@
   box-sizing: border-box;
 }
 h1 {
-    margin-bottom: 15px; 
+    margin-bottom: 0; 
     text-align: center;
     font-family: Comic Sans MS;
 }
-section {
-    text-align: right;
-    font-family: Comic Sans MS;
+div#container {
+
+  position: relative;
 
 }
-
 p {
   border: 3px solid black;
+  padding: 30px;
   background-color: grey;
   width: 90%;
-  height: 150px;
+  height: 200px;
   margin-right: auto;
   margin-left: auto;
   font-family: Comic Sans MS;
+}
 
+#p1 {
+  width: 118px;
+  height: 30px;
+  border: 1px solid black;
+  padding: 0;
+  text-align: center;
+  background-color: pink;
+  position: relative;
+  top: 48px;
+  right: -110px;
+}
+#p2 {
+  width: 118px;
+  height: 30px;
+  border: 1px solid black;
+  padding: 0;
+  text-align: center;
+  background-color: #A52A2A;
+  color: white;
+  position: relative;
+  top: 48px;
+  right: -110px;
+}
+#p3 {
+  width: 118px;
+  height: 30px;
+  border: 1px solid black;
+  padding: 0;
+  text-align: center;
+  background-color: #DEB887;
+  position: relative;
+  top: 48px;
+  right: -110px;
 }
 
 /* Simple Responsive Framework. */
@@ -168,10 +202,12 @@ p {
      <h1>Our Menu</h1>
 
       <div class="row">
-           <div class="col-lg-4 col-md-6 col-sm-12"><section>Chicken</section><p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.</p></div>
-           <div class="col-lg-4 col-md-6 col-sm-12"><section>Beef</section><p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.</p></div>
-           <div class="col-lg-4 col-md-6 col-sm-12"><section>Sushi</section><p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.</p></div>
+           <div class="col-lg-4 col-md-6 col-sm-12"><div id="container"><p id="p1">chicken</p>
+            <p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.</p></div></div>
+           <div class="col-lg-4 col-md-6 col-sm-12"><div id="container"><p id="p2">Beef</p><p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.</p></div></div>
+           <div class="col-lg-4 col-md-6 col-sm-12"><div id="container"><p id="p3">Sushi</p><p>lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimad minim veniam, quis nostrud exercitation ullamco laboris nisiut aliquip ex ea commodo consequat.</p></div></div>
            
       </div>
+</div>
 </body>
 </html>
